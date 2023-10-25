@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="main">
+        <div class="container">
+            <div class="wrapper">
+                <div class="main-chat">
+                    <div class="main-buttons">
+                        <button class="btn-setting main-btn">Настройки</button>
+                        <button class="btn-exit main-btn">Выйти</button>
+                    </div>
+                    <div class="main-screen">
+                        <div class="message-block">
+                            <template id="my_message">
+                                <div class="my_message-block">
+                                    <div class="my_message-wrapper delivered-message_color">
+                                        <p class="my-name-message"></p>
+                                        <span class="my_message_view"></span>
+                                        <p class="time-my-message"></p>
+                                    </div>
+                                </div>
+                            </template>
+                            <template id="other_message">
+                                <div class="other_message-block">
+                                    <div class="other_message-wrapper delivered-message_color">
+                                        <p class="other-name-message"></p>
+                                        <span class="other_message_view"></span>
+                                        <p class="time-message"></p>
+                                    </div>
+                            </div>
+                            </template>
+                        </div>
+                    </div>
+                    <div class="main-bottom bottom">
+                        <form class="main-form">
+                            <input type="text" placeholder="сообщение.." class="message-input input">
+                            <button type="submit" class="bottom-send">
+                                <img alt="an arrow image to send a picture" src="img/arrow.png" class="img-arrow"></img>
+                            </button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="settings_wrapper modal">
+        <div class="block">
+            <div class="wrapper_modal">
+                <div class="modal-name">Настройки</div>
+                <button class="close-modal">x</button>
+            </div>
+            <div class="input_name">Имя в чате</div>
+            <div class="name-select_wrapper">
+                <form class="settings-form main-bottom">
+                    <input type="text" class="settings-input input">
+                    <button class="settings-send main-btn">
+                        Ввести
+                    </button>
+                </form>
+            </div>
+        </div>
+        <div class="overlay"></div>
+    </div>
+
+    <div class="authorize_wrapper modal">
+        <div class="block">
+            <div class="wrapper_modal">
+                <div class="modal-name">Авторизация</div>
+            </div>
+            <div class="input_name">Почта</div>
+            <div class="name-select_wrapper">
+                <form class="authorize-form main-bottom">
+                    <input type="text" class="authorize-input input" placeholder="Введите электронную почту">
+                    <div class="autho-btns">
+                        <button class="btn-getCode main-btn">Получить код</button>
+                        <button class="btn-typeCode main-btn">Ввести код</button>
+                    </div>
+                </form>
+                <div class="error-input"></div>
+            </div>
+        </div>
+        <div class="overlay"></div>
+    </div>
+
+    <div class="confirm_wrapper modal">
+        <div class="block">
+            <div class="wrapper_modal">
+                <div class="modal-name">Подтверждение</div>
+                <button class="close-modal confirm-close">x</button>
+            </div>
+            <div class="input_name">Код</div>
+            <div class="name-select_wrapper">
+                <form class="confirm-form main-bottom">
+                    <input type="text" class="confirm-input input" placeholder="Введите код">
+                    <button class="btn-getIn main-btn">Войти</button>
+                </form>
+            </div>
+            <div class="error"></div>
+        </div>
+        <div class="overlay"></div>
+    </div>
+
+    <script src="./js/index.js" type="module"></script>
+</body>

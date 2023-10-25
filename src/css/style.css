@@ -1,0 +1,223 @@
+body {
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
+}
+
+.container {
+    margin: 0 auto;
+    max-width: 700px;
+}
+
+.wrapper{
+    padding: 8px;
+}
+
+.main-buttons {
+    display: flex;
+    justify-content: space-between;
+}
+
+.main-btn, .get-code {
+    color: black;
+    font-size: 12px;
+    padding: 5px 20px;
+    text-decoration: none;
+    border: 2px solid #eeaeca;
+    text-transform: uppercase;
+    transition: 1s all ease;
+    background-color: #e08ab0;
+    border-radius: 5px;
+    font-family: inherit;
+}
+
+.main-btn:hover, 
+.get-code:hover {
+    background-color: #94bbe9;
+}
+
+.bottom-send{
+    background: transparent;
+    border: none;
+}
+
+.input{
+    width: 80%;
+    border: 1px solid #eeaeca;
+    border-radius: 3px;
+    font-family: inherit;
+    background: #f6eef5;
+    outline: none;
+    height: 30px;
+    padding: 0px 15px;
+}
+
+.input_red {
+    border: 1px solid #960c48;
+}
+
+.main-bottom{
+    display: flex;
+    justify-content: space-between;
+}
+
+.bottom{
+    flex-direction: column;
+}
+
+.main-screen{
+    margin: 10px 0px;
+    overflow-y: auto;
+    height: 437px;
+    border: 1px solid rgb(238,174,202);
+    padding: 5px 15px;
+    background: rgb(238,174,202);
+    background: linear-gradient(180deg, rgba(238,174,202,0.7428221288515406) 2%, rgba(148,187,233,1) 100%);
+    border-radius: 5px;
+    position: relative;
+}
+
+.my_message-block {
+    display: flex;
+    justify-content: end;
+    margin-right: -1px;
+    text-align: right;
+    margin-bottom: 8px;
+}
+
+.my_message-wrapper {
+    padding: 8px;
+}
+
+.other_message-wrapper {
+    padding: 8px;
+    margin-bottom: 8px;
+}
+
+.other_message-block {
+    display: flex;
+    justify-content: start;
+    text-align: left;
+    margin-bottom: 8px;
+}
+
+.time-message, .time-my-message {
+    text-align: right;
+    color: #a48ea4;
+    font-style: italic;
+    font-size: x-small;
+}
+
+.time-message {
+    text-align: left;
+}
+
+.my-name-message, .other-name-message{
+    color: #bf2d6e;
+    font-size: 13px;
+}
+
+.other-name-message{
+    color: #bd2dbf;
+}
+
+.img-arrow{
+    width: 25px;
+    height: 30px;
+}
+
+.main-form{
+    display: flex;
+    justify-content: space-between;
+}
+
+.modal{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    visibility: hidden;
+}
+
+.show{
+    visibility: visible;
+}
+
+.settings_wrapper .overlay, 
+.authorize_wrapper .overlay,
+.confirm_wrapper .overlay{
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-color: black;
+    opacity: 0.7;
+    width: 100%;
+    height: 100%;
+    z-index: 0;
+}
+
+.block{
+    position: relative;
+    z-index: 2;
+    width: 400px;
+    border-radius: 10px;
+    background: rgb(233,170,241);
+    background: linear-gradient(180deg, rgba(233,170,241,0.9473039215686274) 2%, rgba(148,187,233,1) 100%);
+    box-shadow: 0px 3px 5px 3px rgba(60, 148, 215, 0.69);
+    padding: 30px;
+    text-align: center;
+}
+
+.autho-block_green{
+    background: rgb(34,193,195);
+    background: linear-gradient(0deg, rgba(34,193,195,1) 0%, rgba(226,190,114,1) 68%);
+    box-shadow: 0px 3px 5px 3px #22c1c3;
+}
+
+.autho-block_red{
+    background: rgb(131,58,180);
+    background: linear-gradient(90deg, rgba(131,58,180,1) 0%, rgba(224,40,40,1) 50%, rgba(252,176,69,1) 100%);
+    box-shadow: 0px 3px 5px 3px #e02828;
+}
+
+.wrapper_modal{
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 20px;
+}
+
+.close-modal, 
+.btn-send{
+    background: transparent;
+    border: none;
+    font-size: 15px;
+}
+
+.close-modal:hover{
+    opacity: 0.5;
+}
+
+.input_name{
+    text-align: left;
+    margin-bottom: 10px;
+}
+
+.autho-btns{
+    display: flex;
+}
+
+.btn-getCode,
+.btn-typeCode{
+    font-size: 8px;
+    padding: 0px;
+    height: 30px;
+}
+
+.error-input, .error{
+    color: #e02828;
+    text-align: left;
+}
+
